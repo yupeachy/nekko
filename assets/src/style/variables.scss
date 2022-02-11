@@ -1,0 +1,68 @@
+// Variables
+//
+//
+// 1. A map of colors.
+// 2. Base body/grid parameters
+// 3. Base forms parameters
+// 4. A map of breakpoints.
+//
+//___________________________________
+
+
+
+// 1. A map of colors.
+
+$white:           #fff;
+$gray-light:      #E8E8E8;
+$gray:            #BBBBBB;
+$gray-dark:       #666666;
+$primary:         #01019D;
+$blue:            #88B2D2;
+$navy:            #5B7C92;
+$black:           #000;
+$green:           #4AC558;
+
+// 2. Base body/grid parameters
+
+$base-font:             'Inter', sans-serif;
+$title-font:            $base-font;
+$base-color:            #808297;
+$title-color:           #01042F;
+$base-bg:               #FFFFFF;
+$light-bg:              #F2F5F8;
+$dark-bg:              $title-color;
+$outlineColor:    #E6E6EB;
+
+
+$body-min-width:              320px;
+
+$transition:  all .3s ease .02s;
+$transition-d-0:  all .3s ease;
+$transition-decor:  all .6s ease;
+$transition-decor-slow:  all 1s ease;
+
+
+// 3. Base forms parameters
+
+$placeholder-color:           $base-color;
+
+
+// 4. A map of breakpoints.
+
+$breakpoints: (
+        sm: 768px,
+        md: 1024px,
+        lg: 1350px,
+        xl: 1500px,
+        xxl: 1920px
+);
+
+
+// swiper vars
+
+$themeColor: $primary !default;
+$colors: (
+        'white': #ffffff,
+        'black': #000000,
+
+) !default;
