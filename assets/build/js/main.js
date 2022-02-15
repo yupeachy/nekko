@@ -19014,7 +19014,11 @@ partnersSlider .each(function(){
     const partnersSwiper = new Swiper(this, {
         spaceBetween: 0,
         slidesPerView: 'auto',
-        watchOverflow: true,
+        loop: true,
+        speed: 1000,
+        autoplay:{
+            delay: 1000,
+        },
         breakpoints: {
             768:{
                 slidesPerView: '5',

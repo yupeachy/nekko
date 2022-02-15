@@ -111,7 +111,7 @@ body{
   @include respond-below(lg){
     font-size: 16px;
   }
-  @include respond-below(sm){
+  @include respond-below(lm){
     font-size: 14px;
   }
 }
@@ -172,7 +172,7 @@ a,span{
   position: relative;
 
   &__controls{
-    margin: 76px 0;
+    margin: 65px 0;
     position: relative;
     display: flex;
     align-content: center;
@@ -264,6 +264,10 @@ a,span{
         display: flex;
         h1,h2,h3,h4,.h1,.h2,.h3,.h4{
           margin: 0;
+          width: 50%;
+        }
+        .section__controls{
+          margin: 24px 0;
         }
       }
     }
@@ -360,7 +364,7 @@ a,span{
     }
   }
 
-  @include respond-below(sm){
+  @include respond-below(md){
     padding: 40px 0;
     &__controls{
       margin: 30px 0;
@@ -374,6 +378,32 @@ a,span{
 
       & + .section.section--p-0{
         margin-top: -40px;
+      }
+    }
+    &.section--p-0{
+      padding: 0;
+      margin: 0;
+
+      & + .section.section--bg{
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include respond-below(sm){
+    padding: 30px 0;
+    &__controls{
+      margin: 30px 0;
+    }
+    &__title{
+      margin: 30px 0;
+    }
+    &.section--bg{
+      margin: 30px 0;
+      padding: 60px 0;
+
+      & + .section.section--p-0{
+        margin-top: -30px;
       }
     }
     &.section--p-0{
@@ -414,8 +444,11 @@ h1,.h1{
   @include respond-below(lg){
     font-size: 60px;
   }
-  @include respond-below(md){
+  @include respond-below(lm){
     font-size: 50px;
+  }
+  @include respond-below(md){
+    font-size: 40px;
   }
   @include respond-below(sm){
     font-size: 30px;
@@ -428,8 +461,11 @@ h2,.h2{
   @include respond-below(lg){
     font-size: 60px;
   }
-  @include respond-below(md){
+  @include respond-below(lm){
     font-size: 50px;
+  }
+  @include respond-below(md){
+    font-size: 40px;
   }
   @include respond-below(sm){
     font-size: 30px;
@@ -442,8 +478,11 @@ h3,.h3{
   @include respond-below(lg){
     font-size: 44px;
   }
-  @include respond-below(md){
+  @include respond-below(lm){
     font-size: 34px;
+  }
+  @include respond-below(md){
+    font-size: 30px;
   }
   @include respond-below(sm){
     font-size: 26px;
@@ -456,8 +495,11 @@ h4,.h4{
   @include respond-below(lg){
     font-size: 32px;
   }
-  @include respond-below(md){
+  @include respond-below(lm){
     font-size: 26px;
+  }
+  @include respond-below(md){
+    font-size: 22px;
   }
   @include respond-below(sm){
     font-size: 20px;
@@ -470,7 +512,7 @@ h5,.h5{
   @include respond-below(lg){
     font-size: 24px;
   }
-  @include respond-below(md){
+  @include respond-below(lm){
     font-size: 20px;
   }
   @include respond-below(sm){
@@ -484,7 +526,7 @@ h6,.h6{
   @include respond-below(lg){
     font-size: 19px;
   }
-  @include respond-below(md){
+  @include respond-below(lm){
     font-size: 18px;
   }
   @include respond-below(sm){
@@ -539,6 +581,10 @@ h6,.h6{
   align-items: center;
   justify-content: center;
   line-height: 1;
+
+  @include respond-below(lm){
+    font-size: 14px;
+  }
   
   .icon{
     @include size(12px);
@@ -640,10 +686,12 @@ textarea {
   background: none;
   overflow: hidden;
   border-radius: 8px;
-
+  @include respond-below(lm){
+    font-size: 14px;
+  }
   @include respond-below(sm){
     font-size: 14px;
-    padding: 14px 16px;
+    width: 100%;
   }
 
   .icon{
@@ -907,6 +955,10 @@ textarea {
     .icon{
       margin-right: 1em;
     }
+  }
+
+  @include respond-below(lm){
+    font-size: 14px;
   }
 }
 
